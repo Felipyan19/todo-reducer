@@ -1,0 +1,27 @@
+.TodoCounter {
+  color: #333; /* Color de texto para el contador */
+  text-align: center; /* Centrar el texto */
+  font-size: 24px; /* Tamaño de fuente para el contador */
+  margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Estilo cuando el contador está cargando */
+.TodoCounter--loading {
+  color: #777; /* Color de texto más claro para indicar carga */
+  opacity: 0.7; /* Semi-transparente */
+  text-decoration: line-through; /* Tachado para indicar que está inactivo */
+  animation: pulseAnimation 1.5s infinite ease-in-out; /* Animación para llamar la atención */
+}
+
+/* Keyframes para la animación 'pulse' */
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
